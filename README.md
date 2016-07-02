@@ -1,13 +1,15 @@
 # HAND GESTURE RECOGNITION
 
-#### INTRODUCTION
+### INTRODUCTION
 This project implements a hand recognition and hand gesture recognition system using OpenCV on Python 2.7. A histogram based approach is used to separate out a hand from the background image. Background cancellation techniques are used to obtain optimum results. The detected hand is then processed and modelled by finding contours and convex hull to recognize finger and palm positions and dimensions. Finally, a gesture object is created from the recognized pattern which is compared to a defined gesture dictionary.
 
 Platform: Python 2.7
+
 Libraries: OpenCV 2.4.8, Numpy
+
 Hardware Requirements: Camera/Webcam
 
-#### USAGE
+### USAGE
 
 Run HandRecognition.py to begin the program.
 
@@ -24,7 +26,7 @@ The sample gestures implemented are described with screenshots in the documentat
 2. A flipped "L" with thumb and index finger
 3. Pointing with your index finger in vertical position
 
-#### HOW DOES IT WORK?
+### HOW DOES IT WORK?
 
 Read full documentation for detailed explanation about implementation in "docs" folder.
 
@@ -40,6 +42,6 @@ Using the positions of fingers and palm dimensions, we model our hand.
 
 Then we compare the model with a dictionary of Gestures defined in GestureAPI.py to determine presence of gestures.
 
-###### Full explanation with screenshots is provided in the 'Documentation'
+##### Full explanation with screenshots is provided in the 'Documentation'
 
 For any queries, contact @ mahaveer.verma1@gmail.com
