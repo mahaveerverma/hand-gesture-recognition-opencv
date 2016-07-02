@@ -22,7 +22,7 @@ To begin, keep your hand and body outside the frame, so as to capture just the b
 
 Now, you have to capture your hand histogram. Place your hand over the 9 small boxes in the frame so as to capture the maximum range of shades of your hand. Don't let any shadow or air gap show on the boxed areas for best results. Press 'c' to capture the hand and generate a histogram. 
 
-The setup is now complete. Now you will see your hand is getting detected and you will notice a circle inside your palm area, with lines projecting out from it towards your fingers. Try moving your hands, hiding a few fingers or giving it one of the sample gestures implemented in the program.
+The setup is now complete. Now you will see, by keeping your hand inside the rectangular frame, it gets detected and you will notice a circle inside your palm area, with lines projecting out from it towards your fingers. Try moving your hands, hiding a few fingers or giving it one of the sample gestures implemented in the program.
 
 The sample gestures implemented are described with screenshots in the documentation. 
 
@@ -33,6 +33,8 @@ They are:
 2. A flipped "L" with thumb and index finger
 
 3. Pointing with your index finger in vertical position
+
+**Note:** Press 'q' at any time to stop the program or 'r' to restart the program.
 
 ### HOW DOES IT WORK?
 
@@ -50,6 +52,6 @@ Using the positions of fingers and palm dimensions, we model our hand.
 
 Then we compare the model with a dictionary of Gestures defined in GestureAPI.py to determine presence of gestures.
 
-##### Full explanation with screenshots is provided in /docs/Documentation.pdf
+**Full explanation with screenshots is provided in /docs/Documentation.pdf**
 
 For any queries, contact: mahaveer.verma1@gmail.com
