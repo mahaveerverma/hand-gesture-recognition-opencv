@@ -13,6 +13,9 @@ Hardware Requirements: Camera/Webcam
 
 Run HandRecognition.py to begin the program.
 
+**Note for Windows users:**
+Remove this line from all .py files: '#!/usr/bin/python' or else you might get some error.
+
 You will find a window that shows your camera feed. Notice a rectangular frame on the right side of the window. That's the frame where all the detection and recognition works.
 
 To begin, keep your hand and body outside the frame, so as to capture just the background environment, and press 'b'. This will capture the background and create a model of it. This model will be used to remove background from every frame captured once the program setup is complete. 
@@ -48,8 +51,5 @@ Using the positions of fingers and palm dimensions, we model our hand.
 Then we compare the model with a dictionary of Gestures defined in GestureAPI.py to determine presence of gestures.
 
 ##### Full explanation with screenshots is provided in /docs/Documentation.pdf
-
-**Note for Windows users:**
-Remove this line from all .py files: '#!/usr/bin/python' or else you might get some error.
 
 For any queries, contact: mahaveer.verma1@gmail.com
