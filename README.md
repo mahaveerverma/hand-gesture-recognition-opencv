@@ -21,9 +21,14 @@ Now, you have to capture your hand histogram. Place your hand over the 9 small b
 
 The setup is now complete. Now you will see your hand is getting detected and you will notice a circle inside your palm area, with lines projecting out from it towards your fingers. Try moving your hands, hiding a few fingers or giving it one of the sample gestures implemented in the program.
 
-The sample gestures implemented are described with screenshots in the documentation. They are:
+The sample gestures implemented are described with screenshots in the documentation. 
+
+They are:
+
 1. "V" with your index and middle finger
+
 2. A flipped "L" with thumb and index finger
+
 3. Pointing with your index finger in vertical position
 
 ### HOW DOES IT WORK?
@@ -45,6 +50,6 @@ Then we compare the model with a dictionary of Gestures defined in GestureAPI.py
 ##### Full explanation with screenshots is provided in the docs/Documentation.pdf
 
 ##### Note for Windows users: 
-Remove this line from all .py files: '#!/usr/bin/python' or else you might get some error.
+_Remove this line from all .py files: '#!/usr/bin/python' or else you might get some error._
 
 For any queries, contact: mahaveer.verma1@gmail.com
