@@ -42,6 +42,8 @@ Using the positions of fingers and palm dimensions, we model our hand.
 
 Then we compare the model with a dictionary of Gestures defined in GestureAPI.py to determine presence of gestures.
 
-##### Full explanation with screenshots is provided in the 'Documentation'
+##### Full explanation with screenshots is provided in the docs/Documentation.pdf
 
-For any queries, contact @ mahaveer.verma1@gmail.com
+##### Note for windows users: remove this line from all .py files: #!/usr/bin/python or else you might get some error.
+
+For any queries, contact: mahaveer.verma1@gmail.com
