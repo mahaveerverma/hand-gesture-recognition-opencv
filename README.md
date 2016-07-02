@@ -44,6 +44,7 @@ Then we compare the model with a dictionary of Gestures defined in GestureAPI.py
 
 ##### Full explanation with screenshots is provided in the docs/Documentation.pdf
 
-##### Note for windows users: remove this line from all .py files: #!/usr/bin/python or else you might get some error.
+##### Note for Windows users: 
+Remove this line from all .py files: '#!/usr/bin/python' or else you might get some error.
 
 For any queries, contact: mahaveer.verma1@gmail.com
