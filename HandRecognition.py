@@ -204,7 +204,7 @@ while(1):
     else:
         frame=hand_threshold(fg_frame,hand_histogram)
         contour_frame=np.copy(frame)
-        contours,hierarchy=cv2.findContours(contour_frame,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+        img1,contours,hierarchy=cv2.findContours(contour_frame,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
         found,hand_contour=hand_contour_find(contours)
         if(found):
             hand_convex_hull=cv2.convexHull(hand_contour)
