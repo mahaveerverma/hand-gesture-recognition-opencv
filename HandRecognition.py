@@ -1,4 +1,3 @@
-#!/usr/bin/python
 
 # **********************************************
 # * Hand Gesture Recognition Implementation v1.0
@@ -37,7 +36,7 @@ finger_ct_history=[0,0]
 def hand_capture(frame_in,box_x,box_y):
     hsv = cv2.cvtColor(frame_in, cv2.COLOR_BGR2HSV)
     ROI = np.zeros([capture_box_dim*capture_box_count,capture_box_dim,3], dtype=hsv.dtype)
-    for i in xrange(capture_box_count):
+    for i in range(capture_box_count):
         ROI[i*capture_box_dim:i*capture_box_dim+capture_box_dim,0:capture_box_dim] = hsv[box_y[i]:box_y[i]+capture_box_dim,box_x[i]:box_x[i]+capture_box_dim]
     hand_hist = cv2.calcHist([ROI],[0, 1], None, [180, 256], [0, 180, 0, 256])
     cv2.normalize(hand_hist,hand_hist, 0, 255, cv2.NORM_MINMAX)
@@ -137,8 +136,8 @@ def mark_hand_center(frame_in,cont):
     max_d=0
     pt=(0,0)
     x,y,w,h = cv2.boundingRect(cont)
-    for ind_y in xrange(int(y+0.3*h),int(y+0.8*h)): #around 0.25 to 0.6 region of height (Faster calculation with ok results)
-        for ind_x in xrange(int(x+0.3*w),int(x+0.6*w)): #around 0.3 to 0.6 region of width (Faster calculation with ok results)
+    for ind_y in range(int(y+0.3*h),int(y+0.8*h)): #around 0.25 to 0.6 region of height (Faster calculation with ok results)
+        for ind_x in range(int(x+0.3*w),int(x+0.6*w)): #around 0.3 to 0.6 region of width (Faster calculation with ok results)
             dist= cv2.pointPolygonTest(cont,(ind_x,ind_y),True)
             if(dist>max_d):
                 max_d=dist
@@ -229,7 +228,7 @@ while(1):
             hand_histogram=hand_capture(frame_original,box_pos_x,box_pos_y)
     # Capture background by pressing 'b'
     elif interrupt & 0xFF == ord('b'):
-        bg_model = cv2.BackgroundSubtractorMOG2(0,10)
+        bg_model = cv2.createBackgroundSubtractorMOG2(0,10)
         bg_captured=1
     # Reset captured hand by pressing 'r'
     elif interrupt & 0xFF == ord('r'):
